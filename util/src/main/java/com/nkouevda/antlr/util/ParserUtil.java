@@ -88,8 +88,8 @@ public class ParserUtil {
   }
 
   public static void parseAndWalk(
-      Supplier<ParseTree> parserTreeSupplier, ParseTreeListener parserTreeListener) {
-    ParseTree parseTree = parserTreeSupplier.get();
-    ParseTreeWalker.DEFAULT.walk(parserTreeListener, parseTree);
+      Supplier<ParseTree> parseTreeSupplier, ParseTreeListener parseTreeListener) {
+    ParseTree parseTree = parseTreeSupplier.get();
+    ParseTreeWalker.DEFAULT.walk(parseTreeListener, parseTree);
   }
 }
