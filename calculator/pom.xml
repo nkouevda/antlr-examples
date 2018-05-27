@@ -49,6 +49,14 @@
         <groupId>org.antlr</groupId>
         <artifactId>antlr4-maven-plugin</artifactId>
       </plugin>
+
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <configuration>
+          <mainClass>com.nkouevda.antlr.calculator.CalculatorRepl</mainClass>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
