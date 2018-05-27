@@ -12,6 +12,10 @@ Test:
 
     mvn test
 
+Install:
+
+    mvn install
+
 Clean up:
 
     mvn clean
@@ -20,7 +24,9 @@ Clean up:
 
 Calculator REPL:
 
-    $ mvn -q compile exec:java -pl calculator
+    $ mvn install
+    [...]
+    $ mvn -q exec:java -pl calculator
     Use ^C or ^D or "exit" or "quit" to exit
     > 2 + 2
     4.0
