@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.nkouevda.antlr.parentheses</groupId>
-  <artifactId>parentheses</artifactId>
-  <name>Parentheses</name>
+  <groupId>com.nkouevda.antlr.brackets</groupId>
+  <artifactId>brackets</artifactId>
+  <name>Brackets</name>
 
   <parent>
     <groupId>com.nkouevda.antlr</groupId>

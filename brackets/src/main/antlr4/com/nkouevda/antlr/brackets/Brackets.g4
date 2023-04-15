@@ -1,4 +1,4 @@
-grammar Parentheses;
+grammar Brackets;
 
 expression
   : nestedExpression* EOF

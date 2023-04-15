@@ -1,25 +1,25 @@
-package com.nkouevda.antlr.parentheses;
+package com.nkouevda.antlr.brackets;
 
 import org.antlr.v4.runtime.misc.ParseCancellationException;
 
 import com.nkouevda.antlr.util.ParserUtil;
 
-public class Parentheses {
+public class Brackets {
 
-  private Parentheses() {
+  private Brackets() {
   }
 
   /**
-   * Returns whether {@code input} consists of balanced parentheses.
+   * Returns whether {@code input} consists of balanced brackets.
    *
    * <p>For example, {@code verify("(())")} returns true, but {@code verify("(")} returns false.
    *
    * @param input the {@code String} to parse and verify
-   * @return whether {@code input} consists of balanced parentheses
+   * @return whether {@code input} consists of balanced brackets
    */
   public static boolean verify(String input) {
-    ParenthesesParser parser = ParserUtil.newParser(
-        ParenthesesLexer::new, ParenthesesParser::new, input);
+    BracketsParser parser = ParserUtil.newParser(
+        BracketsLexer::new, BracketsParser::new, input);
 
     try {
       parser.expression();

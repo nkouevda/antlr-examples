@@ -11,8 +11,8 @@
   <name>ANTLR Examples</name>
 
   <modules>
+    <module>brackets</module>
     <module>calculator</module>
-    <module>parentheses</module>
     <module>util</module>
   </modules>
 
