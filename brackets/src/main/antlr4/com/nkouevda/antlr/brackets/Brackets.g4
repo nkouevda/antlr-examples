@@ -5,8 +5,20 @@ expression
   ;
 
 nestedExpression
-  : LeftParen nestedExpression* RightParen
+  : LeftAngle nestedExpression* RightAngle
+  | LeftBrace nestedExpression* RightBrace
+  | LeftBracket nestedExpression* RightBracket
+  | LeftParen nestedExpression* RightParen
   ;
+
+LeftAngle: '<';
+RightAngle: '>';
+
+LeftBrace: '{';
+RightBrace: '}';
+
+LeftBracket: '[';
+RightBracket: ']';
 
 LeftParen: '(';
 RightParen: ')';

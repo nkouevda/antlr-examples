@@ -12,7 +12,7 @@ public class Brackets {
   /**
    * Returns whether {@code input} consists of balanced brackets.
    *
-   * <p>For example, {@code verify("(())")} returns true, but {@code verify("(")} returns false.
+   * <p>For example, {@code verify("([])")} returns true, but {@code verify("(")} returns false.
    *
    * @param input the {@code String} to parse and verify
    * @return whether {@code input} consists of balanced brackets

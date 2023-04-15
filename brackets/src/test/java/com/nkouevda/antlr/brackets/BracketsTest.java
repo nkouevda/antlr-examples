@@ -7,7 +7,7 @@ public class BracketsTest {
 
   @Test
   public void testNested() {
-    String input = "()((()())())";
+    String input = "()<[{}()]()>";
     Assert.assertTrue(Brackets.verify(input));
   }
 
@@ -21,6 +21,12 @@ public class BracketsTest {
   public void testEmpty() {
     String input = "";
     Assert.assertTrue(Brackets.verify(input));
+  }
+
+  @Test
+  public void testInterleaved() {
+    String input = "([)]";
+    Assert.assertFalse(Brackets.verify(input));
   }
 
   @Test
